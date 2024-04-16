@@ -1,33 +1,35 @@
 *{
     margin: 0;
-    padding: 0%;
-    box-sizing:border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
+ 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+ 
 :root{
-    --font:"Roboto", sans-serif;
+    --font: "Roboto", sans-serif;
 }
-
+ 
 body{
     font-family: var(--font);
-    background-color: antiquewhite;
+    background-color: rgb(110, 242, 249);
 }
-
+ 
 main{
     width: 70%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px;
 }
-
+ 
 section{
     background-color: aliceblue;
     padding: 25px;
+    margin: 30px 0;
     border-radius: 8px;
     box-shadow: 10px 10px 15px #00000025;
 }
-
+ 
 form{
     height: 300px;
     margin: 30px 0;
@@ -35,14 +37,14 @@ form{
     flex-direction: column;
     justify-content: space-between;
 }
-
+ 
 .campo-form{
     height: 56px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
-
+ 
 input{
     height: 30px;
     border: solid 1px #6d6d6d;
@@ -51,15 +53,15 @@ input{
     caret-color: #007aff;
     text-indent: 5px;
 }
-
-input::placeholder{
-    color: #3c3c43
+ 
+input :placeholder{
+    color: #3c3c43;
 }
-
+ 
 input[type="number"]{
-    appearance: textfield;
+    appearance: texfield;
 }
-
+ 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button{
     display: none;
@@ -87,47 +89,54 @@ button[type="submit"]{
 button[type="submit"]:hover{
     background-color: #34c759;
 }
-
+ 
+/* estilização da tabela */
 table{
     width: 100%;
     margin: 30px 0;
     border: none;
     border-collapse: collapse;
 }
-
+ 
 caption{
     font-size: 1.2rem;
 }
-
+ 
 caption,th{
     text-align: left;
 }
-
+ 
 tbody>tr:nth-child(odd){
-    background-color: #F2F2F2;
+    background-color: #F2F2F7;
 }
-
+ 
 tr{
     height: 40px;
 }
-
+ 
 th,
 tr,
 td{
     border: none;
 }
-
+ 
 caption,
 th,
 td{
     padding: 15px;
 }
-
+ 
 .botao-tabela{
-    background-color: red;
-    color:#FFF
+    background-color: #FF453A;
+    color: white;
 }
-
+ 
+.linha-mensagem td{
+    text-align: center;
+}
+ 
 .botao-tabela:hover{
-    background-color: #ff3b30;
+    background-color: #FF3B30;
 }
+ 
+ 
