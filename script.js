@@ -135,4 +135,9 @@ function montarTabela(listaDeCadastrados) {
     tabela.innerHTML = template;
 }
  
+function deletarRegistros(){
+    localStorage.clear();
+
+    window.location.reload();
+}
  
